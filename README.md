@@ -40,7 +40,7 @@ This free version is a complete, working starter. The **Pro Kit** adds the produ
 - 📘 **Production Playbook** — Stripe subscriptions **+ webhooks**, swap to **Postgres/Supabase**, add **Google/GitHub OAuth**, transactional email, deploy & security hardening — step by step
 - 📄 **Commercial license** (use in unlimited client projects) + **free lifetime updates**
 
-👉 **Get the Pro Kit:** https://alphaletgo.gumroad.com/l/niqbam
+👉 **Get the Pro Kit:** https://alphaletgo.gumroad.com/l/saas-starter-kit
 
 ## License
 

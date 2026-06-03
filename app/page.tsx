@@ -11,7 +11,7 @@ const FEATURES = [
 
 const TIERS = [
   { name: "Starter", price: "$0", note: "The free lite version", points: ["Landing page", "Auth UI", "Dashboard shell"], cta: "View on GitHub", href: "https://github.com/devloadout", highlight: false },
-  { name: "Pro Kit", price: "$49", note: "The full source kit", points: ["Everything in Starter", "Working auth + sessions", "Stripe billing wired", "Deploy guide + commercial license", "Free lifetime updates"], cta: "Get the Pro Kit", href: "https://alphaletgo.gumroad.com/l/niqbam", highlight: true },
+  { name: "Pro Kit", price: "$49", note: "The full source kit", points: ["Everything in Starter", "Working auth + sessions", "Stripe billing wired", "Deploy guide + commercial license", "Free lifetime updates"], cta: "Get the Pro Kit", href: "https://alphaletgo.gumroad.com/l/saas-starter-kit", highlight: true },
 ];
 
 const FAQ = [
@@ -42,7 +42,7 @@ export default function Home() {
         </p>
         <div className="mt-8 flex justify-center gap-3">
           <Link href="/signup" className="rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-500">Try the demo →</Link>
-          <a href="https://alphaletgo.gumroad.com/l/niqbam" className="rounded-lg border border-neutral-700 px-6 py-3 font-semibold hover:border-neutral-500">Get the Pro Kit</a>
+          <a href="https://alphaletgo.gumroad.com/l/saas-starter-kit" className="rounded-lg border border-neutral-700 px-6 py-3 font-semibold hover:border-neutral-500">Get the Pro Kit</a>
         </div>
         <p className="mt-4 text-sm text-neutral-500">Runs instantly — no signup, no config to try it.</p>
       </section>
