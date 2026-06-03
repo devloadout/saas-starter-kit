@@ -3,6 +3,7 @@ import { scryptSync, randomBytes, timingSafeEqual } from "crypto";
 import { SignJWT, jwtVerify } from "jose";
 import { promises as fs } from "fs";
 import path from "path";
+import os from "os";
 
 /**
  * Demo auth that runs with ZERO external services:
@@ -14,7 +15,10 @@ import path from "path";
 
 const SECRET = new TextEncoder().encode(process.env.AUTH_SECRET || "dev-secret-change-me");
 const COOKIE = "session";
-const USERS_FILE = path.join(process.cwd(), "data", "users.json");
+// Local dev persists to ./data; on read-only serverless (e.g. Vercel) use the writable temp dir.
+// For production, swap readUsers/writeUsers for a real database (see README).
+const DATA_DIR = process.env.VERCEL ? path.join(os.tmpdir(), "saas-kit") : path.join(process.cwd(), "data");
+const USERS_FILE = path.join(DATA_DIR, "users.json");
 
 type User = { email: string; hash: string };
 
